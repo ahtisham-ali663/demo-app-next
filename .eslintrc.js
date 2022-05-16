@@ -14,9 +14,13 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {},
+  extends: "next",
   settings: {
     react: {
       version: "latest",
+    },
+    next: {
+      rootDir: "packages/my-app/",
     },
   },
 };
